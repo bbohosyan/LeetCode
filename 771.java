@@ -10,6 +10,8 @@ class Solution {
                 counter++;
             }
         }
+        String a = "aa";
+        a.length()
         return counter;
     }
 }
