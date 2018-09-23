@@ -1,0 +1,2 @@
+select if(count(SecondHighestSalary) = 0, NULL, SecondHighestSalary) as SecondHighestSalary from(
+select distinct ifnull(Salary, NULL) as SecondHighestSalary from Employee offset order by Salary desc limit 1, 1) q;
